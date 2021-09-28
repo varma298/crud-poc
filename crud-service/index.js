@@ -28,7 +28,7 @@ app.use('/users', Routes);
 const URL = 'mongodb+srv://user123:user123@cluster0.bcdbu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 // const dotenv = require('dotenv'); //3 - but we need to tell express where to pick this port 
 // It allows you to seperate your crediantials when we work in a collaborative environment
-const PORT = process.env.PORT || '8080'; //2 - get the port from env file, if not available pick 8080
+const PORT = process.env.PORT || '8081'; //2 - get the port from env file, if not available pick 8080
 
 // connect with the database, takes two arguments 1 - connection url 2 - object with all the options
 // Some of the functions, features are deprecated so it might give you a warning, to avoid that warning
@@ -46,11 +46,4 @@ mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true, useFind
 app.listen(PORT, () => {
     console.log(`server is running on ${PORT} `);
   });
-  
-    // we need .then becausew
-    //it returns a promise 
-  
 
-
-// We can do something like this or we can set it directly in the url as well
-// mongoose.set('useFindAndModify', false);
