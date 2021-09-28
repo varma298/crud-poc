@@ -2,10 +2,9 @@ import User from '../model/user.js';
 
 // Get all users
 export const getUsers = async (request, response) => {
-    // Step -1 // Test API
-    // response.send('Code for Interview');
+    
     try{
-        // finding something inside a model is time taking, so we need to add await
+      
         const users = await User.find();
         response.status(200).json(users);
     }catch( error ){
@@ -15,7 +14,7 @@ export const getUsers = async (request, response) => {
 
 // Save data of the user in database
 export const addUser = async (request, response) => {
-    // retreive the info of user from frontend
+    
     const user = request.body;
     console.log("inside")
 
