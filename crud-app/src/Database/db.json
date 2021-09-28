@@ -1,0 +1,34 @@
+
+
+{
+  "users": [
+    {
+      "name": "devinder",
+      "email": "devinder@gmail.com",
+      "password": "current2021",
+      "phone": "4563214530",
+      "id": 1
+    },
+    {
+      "name": "grajgopal",
+      "email": "graj@gmail.com",
+      "password": "F20192020",
+      "phone": "4563214531",
+      "id": 1
+    },
+    {
+      "name": "apande",
+      "email": "ammu@gmail.com",
+      "password": "hyd2016",
+      "phone": "4563214536",
+      "id": 1
+    },
+    {
+      "name": "schoukiker",
+      "email": "schoukiker@gmail.com",
+      "password": "beng2014",
+      "phone": "4563214537",
+      "id": 1
+    }
+  ]
+}
